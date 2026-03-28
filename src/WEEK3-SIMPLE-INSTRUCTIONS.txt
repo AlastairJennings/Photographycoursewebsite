@@ -1,0 +1,70 @@
+==============================================================================
+WEEK 3 MIGRATION - SIMPLE COPY/PASTE INSTRUCTIONS
+==============================================================================
+
+STEP 1: COPY CONTENT
+--------------------
+1. Open `/components/FilmDarkroomCourse.tsx`
+2. Scroll to line 2151 (search for "Week 3 Module 1: Mission Overview")
+3. Select from line 2151 to line 3433  
+   (starts with `<div className="space-y-2">` and ends right before the "Week 4 Preview" section)
+4. COPY all that content
+
+STEP 2: PASTE INTO WEEK 03
+---------------------------
+1. Open `/components/FilmDarkroomWeek03.tsx`
+2. Find the placeholder content (around line 35)
+3. Replace everything from `<div className="space-y-2">` to the closing `</div>` with your copied content
+4. Make sure it's inside the main container div
+
+STEP 3: FIND/REPLACE MODULE NUMBERS
+------------------------------------
+In FilmDarkroomWeek03.tsx ONLY, do these 26 find/replacements:
+
+FIND: toggleModule(20)    REPLACE WITH: toggleModule(1)
+FIND: toggleModule(21)    REPLACE WITH: toggleModule(2)
+FIND: toggleModule(22)    REPLACE WITH: toggleModule(3)
+FIND: toggleModule(23)    REPLACE WITH: toggleModule(4)
+FIND: toggleModule(24)    REPLACE WITH: toggleModule(5)
+FIND: toggleModule(25)    REPLACE WITH: toggleModule(6)
+FIND: toggleModule(26)    REPLACE WITH: toggleModule(7)
+FIND: toggleModule(27)    REPLACE WITH: toggleModule(8)
+FIND: toggleModule(28)    REPLACE WITH: toggleModule(9)
+FIND: toggleModule(29)    REPLACE WITH: toggleModule(10)
+FIND: toggleModule(30)    REPLACE WITH: toggleModule(11)
+FIND: toggleModule(31)    REPLACE WITH: toggleModule(12)
+FIND: toggleModule(32)    REPLACE WITH: toggleModule(13)
+
+FIND: openModule === 20    REPLACE WITH: openModule === 1
+FIND: openModule === 21    REPLACE WITH: openModule === 2
+FIND: openModule === 22    REPLACE WITH: openModule === 3
+FIND: openModule === 23    REPLACE WITH: openModule === 4
+FIND: openModule === 24    REPLACE WITH: openModule === 5
+FIND: openModule === 25    REPLACE WITH: openModule === 6
+FIND: openModule === 26    REPLACE WITH: openModule === 7
+FIND: openModule === 27    REPLACE WITH: openModule === 8
+FIND: openModule === 28    REPLACE WITH: openModule === 9
+FIND: openModule === 29    REPLACE WITH: openModule === 10
+FIND: openModule === 30    REPLACE WITH: openModule === 11
+FIND: openModule === 31    REPLACE WITH: openModule === 12
+FIND: openModule === 32    REPLACE WITH: openModule === 13
+
+STEP 4: VERIFY IMPORTS
+----------------------
+Make sure the top of FilmDarkroomWeek03.tsx has these imports:
+
+import { useState } from 'react';
+import { Link } from 'react-router';
+import { ChevronDown, CheckCircle2, AlertCircle, Camera, Aperture, Sun, Moon, ArrowLeft, Beaker } from 'lucide-react';
+
+And has the state/toggle function:
+
+const [openModule, setOpenModule] = useState<number | null>(null);
+
+const toggleModule = (index: number) => {
+  setOpenModule(openModule === index ? null : index);
+};
+
+DONE! Week 3 should now work properly with all 13 modules.
+
+==============================================================================

@@ -1,0 +1,52 @@
+{
+  "rewrites": [
+    {
+      "source": "/sitemap.xml",
+      "destination": "/sitemap.xml"
+    },
+    {
+      "source": "/sitemap-pages.xml",
+      "destination": "/sitemap-pages.xml"
+    },
+    {
+      "source": "/sitemap-courses.xml",
+      "destination": "/sitemap-courses.xml"
+    },
+    {
+      "source": "/sitemap-resources.xml",
+      "destination": "/sitemap-resources.xml"
+    },
+    {
+      "source": "/sitemap-reviews.xml",
+      "destination": "/sitemap-reviews.xml"
+    },
+    {
+      "source": "/robots.txt",
+      "destination": "/robots.txt"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/sitemap*.xml",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/xml"
+        }
+      ]
+    },
+    {
+      "source": "/robots.txt",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/plain"
+        }
+      ]
+    }
+  ]
+}
