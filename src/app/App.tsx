@@ -32,6 +32,7 @@ const IntroPhotoWeek04 = lazy(() => import('./components/IntroPhotoWeek04').then
 const IntroPhotoWeek05 = lazy(() => import('./components/IntroPhotoWeek05').then(m => ({ default: m.IntroPhotoWeek05 })));
 const IntroPhotoWeek06 = lazy(() => import('./components/IntroPhotoWeek06').then(m => ({ default: m.IntroPhotoWeek06 })));
 const IntroPhotoWeek07 = lazy(() => import('./components/IntroPhotoWeek07').then(module => ({ default: module.IntroPhotoWeek07 })));
+const IntroPhotoWeek08 = lazy(() => import('./components/IntroPhotoWeek08').then(m => ({ default: m.IntroPhotoWeek08 })));
 const FilmDarkroomCourse = lazy(() => import('./components/FilmDarkroomCourseOverview').then(m => ({ default: m.FilmDarkroomCourseOverview })));
 const FilmDarkroomWeek01 = lazy(() => import('./components/FilmDarkroomWeek01').then(m => ({ default: m.FilmDarkroomWeek01 })));
 const FilmDarkroomWeek02 = lazy(() => import('./components/FilmDarkroomWeek02').then(m => ({ default: m.FilmDarkroomWeek02 })));
@@ -284,6 +285,15 @@ function AppRoutes() {
         element={
           <AppLayout>
             <IntroPhotoWeek07 />
+          </AppLayout>
+        } 
+      />
+      
+      <Route 
+        path="/courses/introduction-to-photography/week-08" 
+        element={
+          <AppLayout>
+            <IntroPhotoWeek08 />
           </AppLayout>
         } 
       />

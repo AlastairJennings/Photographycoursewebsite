@@ -1,7 +1,5 @@
 @custom-variant dark (&:is(.dark *));
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
-
 /* Roslindale font with optimized loading - CRITICAL for preventing CLS */
 @font-face {
   font-family: 'Roslindale';

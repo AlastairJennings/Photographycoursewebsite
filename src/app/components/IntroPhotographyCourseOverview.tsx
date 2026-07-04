@@ -47,9 +47,9 @@ export function IntroPhotographyCourseOverview() {
     },
     {
       number: 8,
-      title: 'Darkroom Techniques & Lightroom Mastery',
-      description: 'Master color management and white balance to ensure accurate colors and creative color grading in your images. Understand color temperature and mood.',
-      available: false,
+      title: 'Advanced Editing & Processing',
+      description: 'Transform RAW files into polished images with professional editing workflows, selective adjustments, masking techniques, and retouching tools.',
+      available: true,
     },
     {
       number: 9,
